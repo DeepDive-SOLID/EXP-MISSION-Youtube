@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유투브 목업 사이트</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logoContainer">
+            <button class="icon icon-menu" id="menuToggle"></button>
+            <h1 class="icon icon-youtube"></h1>
+        </div>
+        <div class="searchWrapper">
+            <div class="searchContainer">
+                <div class="inputContainer">
+                    <input type="search" class="searchInput" placeholder="검색">
+                    <button class="icon icon-keyboard"></button>
+                </div>
+                <div class="searchBtnContainer">
+                    <button class="icon icon-search searchBtn"></button>
+                </div>
+                <button class="icon icon-mic"></button>
+            </div>
+        </div>
+
+        <nav class="userContainer">
+            <button class="icon icon-add"></button>
+            <button class="icon icon-notifications"></button>
+            <button class="icon icon-account"></button>
+        </nav>
+    </header>
+    <main class="mainContainer">
+        <div class="topContainer">
+            <button class="topBtn">전체</button>
+            <button class="topBtn">쇼핑</button>
+            <button class="topBtn">음악</button>
+            <button class="topBtn">영화</button>
+            <button class="topBtn">실시간</button>
+            <button class="topBtn">게임</button>
+        </div>
+
+        <nav class="sidebar">
+            <ul>
+                <li class="sideItem">
+                    <button>
+                        <span class="icon icon-home"></span>
+                        <span>홈</span>
+                    </button>
+                </li>
+                <li class="sideItem">
+                    <button>
+                        <span class="icon icon-shorts"></span>
+                        <span>short</span>
+                    </button>
+                </li>
+                <li class="sideItem">
+                    <button>
+                        <span class="icon icon-subscriptions"></span>
+                        <span>구독</span>
+                    </button>
+                </li>
+                <hr/>
+                <li class="sideItem">
+                    <button>
+                        <span class="icon icon-history"></span>
+                        <span>시청기록</span>
+                    </button>
+                </li>
+                <li class="sideItem">
+                    <button>
+                        <span class="icon icon-playlist"></span>
+                        <span>재생목록</span>
+                    </button>
+                </li>
+                <li class="sideItem">
+                    <button>
+                        <span class="icon icon-watch"></span>
+                        <span>나중에 볼 동영상</span>
+                    </button>
+                </li>
+                <li class="sideItem">
+                    <button>
+                        <span class="icon icon-thumb"></span>
+                        <span>좋아요 표시한 동영상</span>
+                    </button>
+                </li>
+                <hr/>
+                <li class="sideItem">
+                    <button>
+                        <span class="icon icon-fire"></span>
+                        <span>인기 급상승</span>
+                    </button>
+                </li>
+                <li class="sideItem">
+                    <button>
+                        <span class="icon icon-shopping"></span>
+                        <span>쇼핑</span>
+                    </button>
+                </li>
+                <li class="sideItem">
+                    <button>
+                        <span class="icon icon-music"></span>
+                        <span>음악</span>
+                    </button>
+                </li>
+                <li class="sideItem">
+                    <button>
+                        <span class="icon icon-movie"></span>
+                        <span>영화</span>
+                    </button>
+                </li>
+                <li class="sideItem">
+                    <button>
+                        <span class="icon icon-live"></span>
+                        <span>실시간</span>
+                    </button>
+                </li>
+                <li class="sideItem">
+                    <button>
+                        <span class="icon icon-game"></span>
+                        <span>게임</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="videoContainer"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+body {
+    margin: 0;
+}
+
+header {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.searchWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.searchContainer {
+    flex: none;
+    width: 100%;
+    max-width: 732px;
+    display: flex;
+    position: relative;
+    padding: 0 4px;
+    height: 40px;
+    color: #0f0f0f;
+}
+
+.searchInput {
+    padding: 1px 0;
+    margin: 0;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+}
+
+.inputContainer {
+    position: relative;
+    align-items: center;
+    border: 1px solid;
+    border-color: #c6c6c6;
+    border-radius: 40px 0 0 40px;
+    margin-left: 32px;
+    padding: 0 4px 0 16px;
+    display: flex;
+    flex: 1;
+}
+
+.searchBtnContainer {
+    width: 64px;
+    border: 1px solid #d3d3d3;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.userContainer button {
+    margin: 12px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #fff;
+    padding: 16px 0;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: 99;
+    height: calc(100vh - 60px);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sideItem {
+    padding: 10px 10px;
+}
+
+.sideItem button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sideItem:hover {
+    background-color: #f0f0f0;
+}
+
+hr {
+    margin: 8px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+.mainContainer {
+    margin-left: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.videoContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.videoItem {
+    background-color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    display: block;
+}
+
+.videoInfo {
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.profileContainer {
+    flex-shrink: 0;
+}
+
+.profileIcon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.textContainer {
+    flex-grow: 1;
+}
+
+.videoTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.channelTitle {
+    font-size: 0.875rem;
+    color: #666;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.dotBtnContainer {
+    margin-left: auto;
+    margin-top: 4px;
+}
+
+.dotBtnContainer:hover {
+    background-color: #f1f1f1;
+}
+
+.metaInfo {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+}
+
+.icon-menu {
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+    background-image: url('/icons/hamburger-menu.svg');
+}
+
+.icon-youtube {
+    width: 100px;
+    background-image: url('/icons/youtube-logo.svg');
+}
+
+.icon-home {
+    background-image: url('/icons/home.svg');
+}
+
+.icon-shorts {
+    background-image: url('/icons/shorts.svg');
+}
+
+.icon-subscriptions {
+    background-image: url('/icons/subscriptions.svg');
+}
+
+.icon-history {
+    background-image: url('/icons/history.svg');
+}
+
+.icon-playlist {
+    background-image: url('/icons/playlist.svg');
+}
+
+.icon-watch {
+    background-image: url('/icons/watch.svg');
+
+}
+
+.icon-thumb {
+    background-image: url('/icons/thumb.svg');
+}
+
+.icon-fire {
+    background-image: url('/icons/fire.svg');
+}
+
+.icon-shopping {
+    background-image: url('/icons/shopping.svg');
+}
+
+.icon-music {
+    background-image: url('/icons/music.svg');
+}
+
+.icon-movie {
+    background-image: url('/icons/movie.svg');
+}
+
+.icon-live {
+    background-image: url('/icons/live.svg');
+}
+
+.icon-game {
+    background-image: url('/icons/game.svg');
+}
+
+.icon-notifications {
+    width: 30px;
+    height: 30px;
+    background-image: url('/icons/notifications.svg');
+}
+
+.icon-add {
+    width: 30px;
+    height: 30px;
+    background-image: url('/icons/add.svg');
+}
+
+.icon-account {
+    width: 30px;
+    height: 30px;
+    background-image: url('/icons/account.svg');
+}
+
+.icon-keyboard {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    background-image: url('/icons/keyboard.svg');
+}
+
+.icon-search {
+    width: 20px;
+    height: 20px;
+    background-image: url('/icons/search.svg');
+}
+
+.icon-mic {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    background-image: url('/icons/mic.svg');
+    background-size: 22px 22px;
+    cursor: pointer;
+    right: -50px;
+}
+
+.icon-dots {
+    background-image: url('/icons/dots.svg');
+}
+
+.topContainer {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 10px 0;
+    position: sticky;
+    top: 60px;
+    z-index: 90;
+}
+
+.topBtn {
+    flex: 0 0 auto;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 18px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.topBtn:hover {
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 50px;
+        left: -200px;
+        transition: left 0.3s ease;
+        height: calc(100vh - 60px);
+        z-index: 99;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .mainContainer {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .searchContainer {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 8px;
+      }
+
+    .searchWrapper {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .userContainer {
+        margin-left: auto;
+    }
+
+    .videoContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 20px;
+    }
+
+    .videoTitle {
+        font-size: 0.9rem;
+    }
+
+    .searchInput,
+    .searchBtn {
+        font-size: 0.9rem;
+    }
+}
