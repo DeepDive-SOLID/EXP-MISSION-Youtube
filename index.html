@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="styles/general.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/sidebar.css" />
+        <link rel="stylesheet" href="styles/video.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="left-section">
+                <img
+                    class="hamburger-menu"
+                    src="assets/icons/hamburger-menu.svg"
+                />
+                <img class="youtube-logo" src="assets/icons/youtube-logo.svg" />
+            </div>
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search" />
+                <button class="search-button">
+                    <img class="search-icon" src="assets/icons/search.svg" />
+                    <div class="tooltip">Search</div>
+                </button>
+                <button class="voice-search-button">
+                    <img
+                        class="voice-search-icon"
+                        src="assets/icons/voice-search-icon.svg"
+                    />
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+            </div>
+            <div class="right-section">
+                <div class="upload-icon-container">
+                    <img class="upload-icon" src="assets/icons/upload.svg" />
+                    <div class="tooltip">Create</div>
+                </div>
+                <img
+                    class="youtube-apps-icon"
+                    src="assets/icons/youtube-apps.svg"
+                />
+                <div class="notifications-icon-container">
+                    <img
+                        class="notifications-icon"
+                        src="assets/icons/notifications.svg"
+                    />
+                    <div class="notifications-count">1</div>
+                </div>
+                <img
+                    class="current-user-picture"
+                    src="assets/images/avatars/avatar-1.png"
+                />
+            </div>
+        </header>
+        <nav class="sidebar">
+            <div class="sidebar-link" id="sidebar-home" data-category="home">
+                <img src="assets/icons/home.svg" />
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link" data-category="1">
+                <img src="assets/icons/video.svg" />
+                <div>Movie</div>
+            </div>
+            <div class="sidebar-link" data-category="10">
+                <img src="assets/icons/music-note-svgrepo-com.svg" />
+                <div>Music</div>
+            </div>
+            <div class="sidebar-link" data-category="17">
+                <img src="assets/icons/sports.svg" />
+                <div>Sports</div>
+            </div>
+            <div class="sidebar-link" data-category="25">
+                <img src="assets/icons/news.svg" />
+                <div>News</div>
+            </div>
+            <div class="sidebar-link" data-category="20">
+                <img src="assets/icons/game.svg" />
+                <div>Game</div>
+            </div>
+            <div class="sidebar-link" data-category="28">
+                <img src="assets/icons/science.svg" />
+                <div>Science</div>
+            </div>
+        </nav>
+        <main>
+            <div class="video-grid"></div>
+            <script src="script.js"></script>
+        </main>
+    </body>
+</html>
