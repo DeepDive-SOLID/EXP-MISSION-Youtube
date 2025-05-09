@@ -2,10 +2,14 @@
 
 # 기능 요약
 - 유튜브 로고 또는 홈 클릭 시 인기 영상 불러옴
-- 사이드바 각 카테고리별 영상 불러옴
 - 스크롤 하면 영상 20개씩 로드
+![스크린샷 2025-05-09 171547](https://github.com/user-attachments/assets/bd494b3a-6091-4b2b-8fc6-8d8cca05595a)
+- 사이드바 각 카테고리별 영상 불러옴
+![스크린샷 2025-05-09 171624](https://github.com/user-attachments/assets/c3446f84-a7c3-4f6c-a38e-27c98e670cf5)
 - 검색 기능 (엔터로 검색 가능)
+![스크린샷 2025-05-09 171606](https://github.com/user-attachments/assets/62627b35-b5ff-49b5-a9f9-f1ca51b92fcd)
 - 반응형
+![스크린샷 2025-05-09 172017](https://github.com/user-attachments/assets/c86e11ea-e473-4ecc-b0b9-1c824cd38856)
 
 # 채널 프로필 이미지 가져오기
 - fetchChannelThumbnail(channelId)
@@ -41,13 +45,16 @@ searchInput.addEventListener("keydown", ...)`
 # 무한 스크롤 처리
 `window.addEventListener("scroll", ...)`
   - 사용자가 스크롤 하단 300px 근처까지 도달하면 fetchPopularVideos() 호출
-  - nextPageToken을 활용하여 다음 페이지 영상 로드
+  - nextPageToken을 활용하여 다음 페이지
+ 영상 로드
 
 # 유튜브 로고 및 홈 버튼 클릭 처리
+
 `
 
     document.addEventListener("DOMContentLoaded", () => {
         const sidebarHome = ...
+
         const youtubeLogo = ...
         
         const goHome = () => {
