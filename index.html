@@ -24,12 +24,13 @@
           src="asset/header/youtube-logo.svg"
           alt="youtube-logo"
           class="youtube-logo"
+          id="youtubeLogo"
         />
       </div>
       <div class="middle-section">
         <div class="search-container">
-          <input type="text" placeholder="검색" class="search-bar" />
-          <button class="search-button">
+          <input type="text" placeholder="검색" class="search-bar" id="searchInput"/>
+          <button class="search-button" id="searchBtn">
             <img
               src="asset/header/search.svg"
               alt="search"
@@ -142,19 +143,19 @@
         <button class="nav-arrow left" id="navLeft">&lt;</button>
 
         <div class="nav-buttons" id="navButtons">
-          <button class="nav-btn active">전체</button>
-          <button class="nav-btn">음악</button>
-          <button class="nav-btn">게임</button>
-          <button class="nav-btn">믹스</button>
-          <button class="nav-btn">야구</button>
-          <button class="nav-btn">라이브</button>
-          <button class="nav-btn">힙합</button>
-          <button class="nav-btn">ASMR</button>
-          <button class="nav-btn">랩</button>
-          <button class="nav-btn">애니메이션</button>
-          <button class="nav-btn">최근에 업로드된 동영상</button>
-          <button class="nav-btn">감상한 동영상</button>
-          <button class="nav-btn">새로운 맞춤 동영상</button>
+          <button class="nav-btn active" data-category="전체">전체</button>
+          <button class="nav-btn" data-category="음악">음악</button>
+          <button class="nav-btn" data-category="게임">게임</button>
+          <button class="nav-btn" data-category="믹스">믹스</button>
+          <button class="nav-btn" data-category="야구">야구</button>
+          <button class="nav-btn" data-category="라이브">라이브</button>
+          <button class="nav-btn" data-category="힙합">힙합</button>
+          <button class="nav-btn" data-category="ASMR">ASMR</button>
+          <button class="nav-btn" data-category="랩">랩</button>
+          <button class="nav-btn" data-category="애니메이션">애니메이션</button>
+          <button class="nav-btn" data-category="최근에 업로드된 동영상">최근에 업로드된 동영상</button>
+          <button class="nav-btn" data-category="감상한 동영상">감상한 동영상</button>
+          <button class="nav-btn" data-category="새로운 맞춤 동영상">새로운 맞춤 동영상</button>
         </div>
 
         <button class="nav-arrow right" id="navRight">&gt;</button>

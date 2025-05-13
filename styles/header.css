@@ -41,15 +41,13 @@
 
 /* 중앙 검색 영역 (절대 중앙 정렬) */
 .middle-section {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  flex: 1;
   display: flex;
   align-items: center;
-  gap: 8px;
-  max-width: 600px;
-  width: 100%;
   justify-content: center;
+  padding: 0 16px;
+  min-width: 0;
+  gap: 8px;
 }
 
 /* 검색창 + 버튼 감싸는 전체 */
@@ -60,8 +58,9 @@
   border-radius: 20px;
   background-color: #0f0f0f;
   overflow: hidden;
-  flex: 1;
+  width: 100%;
   max-width: 450px;
+  min-width: 150px;
 }
 
 /* 검색창 입력 필드 */
@@ -190,4 +189,28 @@
 .voice-search-button:hover .tooltip,
 .upload-icon-container:hover .tooltip {
   opacity: 1;
+}
+
+
+@media (max-width: 600px) {
+  .search-container {
+    max-width: 280px;
+  }
+
+  .search-bar {
+    font-size: 14px;
+  }
+
+  .search-button {
+    width: 50px;
+  }
+
+  .voice-search-button {
+    display: none;
+  }
+
+  .upload-icon,
+  .notifications-icon-container {
+    display: none;
+  }
 }
