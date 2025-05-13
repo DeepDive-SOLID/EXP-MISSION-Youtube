@@ -9,7 +9,7 @@
 
 /* 헤더 레이아웃 */
 .header {
-  height: 55px;
+  height: 85px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,13 +29,13 @@
 }
 
 .hamburger-menu {
-  height: 24px;
+  height: 30px;
   margin-right: 20px;
   cursor: pointer;
 }
 
 .youtube-logo {
-  height: 60px;
+  height: 80px;
   cursor: pointer;
 }
 
@@ -61,7 +61,7 @@
   background-color: #0f0f0f;
   overflow: hidden;
   flex: 1;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 /* 검색창 입력 필드 */
@@ -82,7 +82,7 @@
 /* 검색 버튼 */
 .search-button {
   height: 40px;
-  width: 64px;
+  width: 60px;
   background-color: #222;
   border: none;
   display: flex;
@@ -95,13 +95,13 @@
 
 /* 검색 아이콘 */
 .search-icon {
-  height: 24px;
+  height: 30px;
 }
 
 /* 음성 검색 버튼 */
 .voice-search-button {
-  height: 40px;
-  width: 40px;
+  height: 42px;
+  width: 42px;
   border-radius: 50%;
   border: none;
   background-color: #272727;
@@ -125,13 +125,13 @@
 
 /* 만들기 버튼 */
 .upload-icon {
-  height: 36px;
+  height: 40px;
   padding: 0 16px;
   border: none;
   border-radius: 18px;
   background-color: #272727;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,7 +141,7 @@
 
 /* 알림 아이콘 */
 .notifications-icon {
-  height: 24px;
+  height: 30px;
   cursor: pointer;
 }
 
@@ -162,8 +162,8 @@
 
 /* 유저 아이콘 */
 .user-icon {
-  height: 32px;
-  width: 32px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;

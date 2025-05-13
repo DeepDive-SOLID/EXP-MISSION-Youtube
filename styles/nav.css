@@ -1,0 +1,36 @@
+.nav {
+ /* 사이드바 넓이와 동일하게 */
+  display: flex;
+  gap: 12px;
+  padding: 12px 24px;
+  background-color: #0f0f0f;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-btn {
+  padding: 6px 16px;
+  background-color: #272727;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: #3d3d3d;
+}
+
+.nav-btn.active {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}

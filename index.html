@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/video.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
   </head>
   <body>
     <section class="header">
@@ -17,6 +18,7 @@
           src="asset/header/hamburger-menu.svg"
           alt="hamburger-menu"
           class="hamburger-menu"
+          id="menuToggle"
         />
         <img
           src="asset/header/youtube-logo.svg"
@@ -28,7 +30,11 @@
         <div class="search-container">
           <input type="text" placeholder="검색" class="search-bar" />
           <button class="search-button">
-            <img src="asset/header/search.svg" alt="search" class="search-icon" />
+            <img
+              src="asset/header/search.svg"
+              alt="search"
+              class="search-icon"
+            />
             <div class="tooltip">검색</div>
           </button>
         </div>
@@ -58,79 +64,97 @@
         <img src="asset/header/user.svg" alt="user" class="user-icon" />
       </div>
     </section>
-    <section class="sidebar">
 
-        <!-- 주요 메뉴 -->
-        <nav class="sidebar-menu">
-          <div class="sidebar-item active">
-            <img src="asset/sidebar/home.svg" class="sidebar-icon" />
-            <span>홈</span>
-          </div>
-          <div class="sidebar-item">
-            <img src="asset/sidebar/shorts.svg" class="sidebar-icon" />
-            <span>Shorts</span>
-          </div>
-          <div class="sidebar-item">
-            <img src="asset/sidebar/subscriptions.svg" class="sidebar-icon" />
-            <span>구독</span>
-            <div class="blue-dot"></div>
-          </div>
-        </nav>
 
-        <hr class="sidebar-divider" />
-
-        <!-- 내 페이지 -->
-        <div class="sidebar-section">
-          <div class="sidebar-title">내 페이지 ></div>
-          <div class="sidebar-item">
-            <img src="asset/sidebar/history.svg" class="sidebar-icon" /><span
-              >시청 기록</span
-            >
-          </div>
-          <div class="sidebar-item">
-            <img src="asset/sidebar/playlist.svg" class="sidebar-icon" /><span
-              >재생목록</span
-            >
-          </div>
-          <div class="sidebar-item">
-            <img src="asset/sidebar/videos.svg" class="sidebar-icon" /><span
-              >내 동영상</span
-            >
-          </div>
-          <div class="sidebar-item">
-            <img src="asset/sidebar/watch-later.svg" class="sidebar-icon" /><span
-              >나중에 볼 동영상</span
-            >
-          </div>
-          <div class="sidebar-item">
-            <img src="asset/sidebar/like.svg" class="sidebar-icon" /><span
-              >좋아요 표시한 동영상</span
-            >
-          </div>
+    <section class="sidebar" id="sidebar">
+      <!-- 주요 메뉴 -->
+      <nav class="sidebar-menu">
+        <div class="sidebar-item active">
+          <img src="asset/sidebar/home.svg" class="sidebar-icon" />
+          <span>홈</span>
         </div>
-
-        <hr class="sidebar-divider" />
-
-        <!-- 구독 목록 -->
-        <div class="sidebar-section">
-          <div class="sidebar-title">구독</div>
-          <div class="sidebar-item">
-            <img src="asset/sidebar/youtube_circle.png" class="channel-icon" />
-            <span>침착맨</span>
-            <div class="blue-dot"></div>
-          </div>
-          <div class="sidebar-item">
-            <img src="asset/sidebar/youtube_circle.png" class="channel-icon" />
-            <span>BEARS TV</span>
-          </div>
-          <div class="sidebar-item">
-            <img src="asset/sidebar/youtube_circle.png" class="channel-icon" />
-            <span>모트모트TV</span>
-            <div class="blue-dot"></div>
-          </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/shorts.svg" class="sidebar-icon" />
+          <span>Shorts</span>
         </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/subscriptions.svg" class="sidebar-icon" />
+          <span>구독</span>
+          <div class="blue-dot"></div>
+        </div>
+      </nav>
+
+      <hr class="sidebar-divider" />
+
+      <!-- 내 페이지 -->
+      <div class="sidebar-section">
+        <div class="sidebar-title">내 페이지 ></div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/history.svg" class="sidebar-icon" /><span
+            >시청 기록</span
+          >
+        </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/playlist.svg" class="sidebar-icon" /><span
+            >재생목록</span
+          >
+        </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/videos.svg" class="sidebar-icon" /><span
+            >내 동영상</span
+          >
+        </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/watch-later.svg" class="sidebar-icon" /><span
+            >나중에 볼 동영상</span
+          >
+        </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/like.svg" class="sidebar-icon" /><span
+            >좋아요 표시한 동영상</span
+          >
+        </div>
+      </div>
+
+      <hr class="sidebar-divider" />
+
+      <!-- 구독 목록 -->
+      <div class="sidebar-section">
+        <div class="sidebar-title">구독</div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/youtube_circle.png" class="channel-icon" />
+          <span>침착맨</span>
+          <div class="blue-dot"></div>
+        </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/youtube_circle.png" class="channel-icon" />
+          <span>BEARS TV</span>
+        </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/youtube_circle.png" class="channel-icon" />
+          <span>모트모트TV</span>
+          <div class="blue-dot"></div>
+        </div>
+      </div>
+    </section>
+    <div class="main-wrapper">
+    <section class="nav">
+      <div class="nav-buttons">
+        <button class="nav-btn active">전체</button>
+        <button class="nav-btn">음악</button>
+        <button class="nav-btn">게임</button>
+        <button class="nav-btn">믹스</button>
+        <button class="nav-btn">야구</button>
+        <button class="nav-btn">라이브</button>
+        <button class="nav-btn">힙합</button>
+      </div>
     </section>
 
-    <section class="Content">content</section>
+    <section class="Content">
+      <div class="videoContainer"></div>
+    </section>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
