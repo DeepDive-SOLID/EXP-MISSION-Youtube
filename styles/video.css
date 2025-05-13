@@ -1,0 +1,42 @@
+.videoContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 24px;
+}
+
+.videoItem {
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.videoInfo {
+  display: flex;
+  margin-top: 10px;
+}
+
+.profileIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.videoTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 4px;
+}
+
+.channelTitle,
+.metaInfo {
+  font-size: 13px;
+  color: #aaa;
+  margin: 0;
+}

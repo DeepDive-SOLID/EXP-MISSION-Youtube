@@ -1,0 +1,62 @@
+.nav {
+  position: relative; /* ← 추가!! */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 40px;
+  background-color: #0f0f0f;
+  overflow: hidden; /* 슬라이드 영역 잘라냄 */
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 16px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  padding: 8px 0;
+  flex: 1;
+}
+
+.nav-btn {
+  padding: 6px 16px;
+  background-color: #272727;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: #3d3d3d;
+}
+
+.nav-btn.active {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0f0f0f;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 6px 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav-arrow.left {
+  left: 0;
+}
+
+.nav-arrow.right {
+  right: 0;
+}
