@@ -1,0 +1,193 @@
+/* 공통 SVG 색상 반전 */
+.search-icon,
+.voice-search-icon,
+.notifications-icon,
+.hamburger-menu,
+.user-icon {
+  filter: invert(1);
+}
+
+/* 헤더 레이아웃 */
+.header {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  background-color: #0f0f0f;
+  z-index: 100;
+}
+
+/* 왼쪽 영역 */
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  height: 24px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.youtube-logo {
+  height: 60px;
+  cursor: pointer;
+}
+
+/* 중앙 검색 영역 (절대 중앙 정렬) */
+.middle-section {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 600px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* 검색창 + 버튼 감싸는 전체 */
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #3f3f3f;
+  border-radius: 20px;
+  background-color: #0f0f0f;
+  overflow: hidden;
+  flex: 1;
+  max-width: 500px;
+}
+
+/* 검색창 입력 필드 */
+.search-bar {
+  flex: 1;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.search-bar::placeholder {
+  color: #aaa;
+}
+
+/* 검색 버튼 */
+.search-button {
+  height: 40px;
+  width: 64px;
+  background-color: #222;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-left: 1px solid #3f3f3f;
+  position: relative;
+}
+
+/* 검색 아이콘 */
+.search-icon {
+  height: 24px;
+}
+
+/* 음성 검색 버튼 */
+.voice-search-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.voice-search-icon {
+  height: 24px;
+}
+
+/* 오른쪽 영역 */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* 만들기 버튼 */
+.upload-icon {
+  height: 36px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 18px;
+  background-color: #272727;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+/* 알림 아이콘 */
+.notifications-icon {
+  height: 24px;
+  cursor: pointer;
+}
+
+.notifications-icon-container {
+  position: relative;
+}
+
+.notifications-count {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  font-size: 11px;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+/* 유저 아이콘 */
+.user-icon {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* 툴팁 공통 */
+.tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 999;
+}
+
+/* 툴팁 호버 */
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip {
+  opacity: 1;
+}

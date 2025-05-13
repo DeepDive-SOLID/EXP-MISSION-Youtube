@@ -1,0 +1,26 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    font-family: Roboto, Arial;
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+}
+
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: #212121FF;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+}
