@@ -1,49 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube</title>
 
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/video.css">
-    <link rel="stylesheet" href="styles/sidebar.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+  </head>
+  <body>
     <section class="header">
-        <div class="left-section">
-            <img src="asset/hamburger-menu.svg" alt="hamburger-menu" class="hamburger-menu">
-            <img src="asset/youtube-logo.svg" alt="youtube-logo" class="youtube-logo">
+      <div class="left-section">
+        <img
+          src="asset/header/hamburger-menu.svg"
+          alt="hamburger-menu"
+          class="hamburger-menu"
+        />
+        <img
+          src="asset/header/youtube-logo.svg"
+          alt="youtube-logo"
+          class="youtube-logo"
+        />
+      </div>
+      <div class="middle-section">
+        <div class="search-container">
+          <input type="text" placeholder="검색" class="search-bar" />
+          <button class="search-button">
+            <img src="asset/header/search.svg" alt="search" class="search-icon" />
+            <div class="tooltip">검색</div>
+          </button>
         </div>
-        <div class="middle-section">
-            <div class="search-container">
-                <input type="text" placeholder="검색" class="search-bar" />
-                <button class="search-button">
-                  <img src="asset/search.svg" alt="search" class="search-icon" />
-                  <div class="tooltip">검색</div>
-                </button>
-              </div>
-              
 
-            <button class="voice-search-button">
-                <img src="asset/voice-search-icon.svg" alt="voice-search-icon" class="voice-search-icon">
-                <div class="tooltip">Search with your voice</div>
-            </button>
+        <button class="voice-search-button">
+          <img
+            src="asset/header/voice-search-icon.svg"
+            alt="voice-search-icon"
+            class="voice-search-icon"
+          />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <button class="upload-icon-container upload-icon">
+          + 만들기
+          <div class="tooltip">Create</div>
+        </button>
+        <div class="notifications-icon-container">
+          <img
+            src="asset/header/notifications.svg"
+            alt="notifications"
+            class="notifications-icon"
+          />
+          <div class="notifications-count">1</div>
         </div>
-        <div class="right-section">
-            <button class="upload-icon-container upload-icon">
-                + 만들기
-                <div class="tooltip">Create</div>
-            </button>
-            <div class="notifications-icon-container">
-                <img src="asset/notifications.svg" alt="notifications" class="notifications-icon">
-                <div class="notifications-count">1</div>
-            </div>
-            <img src="asset/user.svg" alt="user" class="user-icon">
+        <img src="asset/header/user.svg" alt="user" class="user-icon" />
+      </div>
+    </section>
+    <section class="sidebar">
+
+        <!-- 주요 메뉴 -->
+        <nav class="sidebar-menu">
+          <div class="sidebar-item active">
+            <img src="asset/sidebar/home.svg" class="sidebar-icon" />
+            <span>홈</span>
+          </div>
+          <div class="sidebar-item">
+            <img src="asset/sidebar/shorts.svg" class="sidebar-icon" />
+            <span>Shorts</span>
+          </div>
+          <div class="sidebar-item">
+            <img src="asset/sidebar/subscriptions.svg" class="sidebar-icon" />
+            <span>구독</span>
+            <div class="blue-dot"></div>
+          </div>
+        </nav>
+
+        <hr class="sidebar-divider" />
+
+        <!-- 내 페이지 -->
+        <div class="sidebar-section">
+          <div class="sidebar-title">내 페이지 ></div>
+          <div class="sidebar-item">
+            <img src="asset/sidebar/history.svg" class="sidebar-icon" /><span
+              >시청 기록</span
+            >
+          </div>
+          <div class="sidebar-item">
+            <img src="asset/sidebar/playlist.svg" class="sidebar-icon" /><span
+              >재생목록</span
+            >
+          </div>
+          <div class="sidebar-item">
+            <img src="asset/sidebar/videos.svg" class="sidebar-icon" /><span
+              >내 동영상</span
+            >
+          </div>
+          <div class="sidebar-item">
+            <img src="asset/sidebar/watch-later.svg" class="sidebar-icon" /><span
+              >나중에 볼 동영상</span
+            >
+          </div>
+          <div class="sidebar-item">
+            <img src="asset/sidebar/like.svg" class="sidebar-icon" /><span
+              >좋아요 표시한 동영상</span
+            >
+          </div>
+        </div>
+
+        <hr class="sidebar-divider" />
+
+        <!-- 구독 목록 -->
+        <div class="sidebar-section">
+          <div class="sidebar-title">구독</div>
+          <div class="sidebar-item">
+            <img src="asset/sidebar/youtube_circle.png" class="channel-icon" />
+            <span>침착맨</span>
+            <div class="blue-dot"></div>
+          </div>
+          <div class="sidebar-item">
+            <img src="asset/sidebar/youtube_circle.png" class="channel-icon" />
+            <span>BEARS TV</span>
+          </div>
+          <div class="sidebar-item">
+            <img src="asset/sidebar/youtube_circle.png" class="channel-icon" />
+            <span>모트모트TV</span>
+            <div class="blue-dot"></div>
+          </div>
         </div>
     </section>
-    <section class="sidebar">nav</section>
+
     <section class="Content">content</section>
-</body>
+  </body>
 </html>
