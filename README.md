@@ -67,7 +67,7 @@
 
 | 함수명                             | 설명                                             |
 | ---------------------------------- | ------------------------------------------------ |
-| `loadPopularVideos()`              | 한국 인기 영상 12개를 가져와 화면에 렌더링       |
+| `loadPopularVideos()`              | 한국 인기 영상 30개를 가져와 화면에 렌더링       |
 | `searchVideosByCategory(query)`    | 검색어 기반 영상 검색 및 상세 정보 조회          |
 | `fetchChannelThumbnail(channelId)` | 채널 썸네일 이미지 URL을 반환                    |
 | `renderVideoList(videos)`          | 받아온 영상 리스트를 HTML 요소로 렌더링          |
