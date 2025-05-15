@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="./styles/general.css">
+        <link rel="stylesheet" href="./styles/header.css">
+        <link rel="stylesheet" href="./styles/sidebar.css">
+        <link rel="stylesheet" href="./styles/video.css">
+
+        <title>YouTube Clone</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="left-section">
+                <img class="hamburger-menu" src="./assets/icons/hamburger-menu.svg" alt>
+                <a href="index.html">
+                    <img class="youtube-logo" src="./assets/icons/youtube-logo.svg" alt>
+                </a>
+            </div>
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+                <button class="search-button">
+                    <img class="search-icon" src="./assets/icons/search.svg" alt>
+                    <div class="tooltip">Search</div>
+                </button>
+                <button class="voice-search-button">
+                    <img class="voice-search-icon" src="./assets/icons/voice-search-icon.svg" alt>
+                    <div class="tooltip">Search With your Voice</div>
+                </button>
+            </div>
+            <div class="right-section">
+                <div class="upload-icon-container">
+                    <img class="upload-icon" src="./assets/icons/upload.svg" alt>
+                    <div class="tooltip">Create</div>
+                </div>
+
+                <div class="notifications-icon-container">
+                    <img class="notifications-icon" src="./assets/icons/notifications.svg" alt>
+                </div>
+                <img class="current-user-picture" src="./assets/images/avatars/avatar-1.png" alt>
+            </div>
+        </header>
+        <nav class="sidebar">
+            <div class="sidebar-link">
+                <img src="./assets/icons/home.svg" alt>
+                <div>홈</div>
+            </div>
+
+            <div class="sidebar-link">
+                <img src="./assets/icons/subscriptions.svg" alt>
+                <div>구독</div>
+            </div>
+
+        </nav>
+        <main>
+            <section class="category">
+                <div class="category-button" data-set="0" id="choice">전체</div>
+                <div class="category-button" data-set="10">음악</div>
+                <div class="category-button" data-set="20">게임</div>
+            </section>
+            <section class="video-grid">
+
+            </section>
+        </main>
+    </body>
+    <script src="./script.js"></script>
+</html>
