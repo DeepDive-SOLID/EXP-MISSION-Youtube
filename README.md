@@ -4,7 +4,7 @@
 
 ## 결과물
 ### 메인
-![Image](https://github.com/user-attachments/assets/310a76ba-410e-4d6d-920f-e9bf8b0a958c)
+<img width="1318" alt="Image" src="https://github.com/user-attachments/assets/f46329ff-cbcd-4615-9a55-16acfc4a5689" />
 ---
 ### 검색
 <img width="1318" alt="Image" src="https://github.com/user-attachments/assets/831b281a-4d5a-42da-8035-416d7501338e" />
