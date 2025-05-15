@@ -21,20 +21,20 @@
 ---
 ### 화면
 > 전체화면
-![전체화면](image.png)
+![전체화면](image/image.png)
 
 > 사이드바 닫았을 때 화면
-![사이드바 닫았을 때](image-1.png)
+![사이드바 닫았을 때](image/image-1.png)
 
 > 음악 카테고리 화면
-![음악 카테고리 화면](image-2.png)
+![음악 카테고리 화면](image/image-2.png)
 
 > 검색 결과 화면
-![검색했을 때 화면](image-3.png)
+![검색했을 때 화면](image/image-3.png)
 
 > 반응형 화면
-![반응형 화면-1](image-4.png)
-![반응형 화면-2](image-5.png)
+![반응형 화면-1](image/image-4.png)
+![반응형 화면-2](image/image-5.png)
 ---
 
 ### index.html
