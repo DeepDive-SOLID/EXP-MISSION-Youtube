@@ -1,7 +1,7 @@
 # EXP-MISSION-YouTube
 ### 유튜버 사이트 목업 만들기
 결과물
-<img width="1501" alt="스크린샷 2025-05-08 오후 6 28 41" src="https://github.com/user-attachments/assets/6ed59d5d-5f84-4f2c-9faf-d27cee745e5d" />
+![스크린샷 2025-05-21 오후 1 15 14](https://github.com/user-attachments/assets/452dfef1-ef8f-4bee-bb86-224f56dd27d8)
 
 <br>
 
