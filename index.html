@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <section class="header">
+      <div class="left-section">
+        <img
+          src="asset/header/hamburger-menu.svg"
+          alt="hamburger-menu"
+          class="hamburger-menu"
+          id="menuToggle"
+        />
+        <img
+          src="asset/header/youtube-logo.svg"
+          alt="youtube-logo"
+          class="youtube-logo"
+          id="youtubeLogo"
+        />
+      </div>
+      <div class="middle-section">
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder="검색"
+            class="search-bar"
+            id="searchInput"
+          />
+          <button class="search-button" id="searchBtn">
+            <img
+              src="asset/header/search.svg"
+              alt="search"
+              class="search-icon"
+            />
+            <div class="tooltip">검색</div>
+          </button>
+        </div>
+
+        <button class="voice-search-button">
+          <img
+            src="asset/header/voice-search-icon.svg"
+            alt="voice-search-icon"
+            class="voice-search-icon"
+          />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <button class="upload-icon-container upload-icon">
+          + 만들기
+          <div class="tooltip">Create</div>
+        </button>
+        <div class="notifications-icon-container">
+          <img
+            src="asset/header/notifications.svg"
+            alt="notifications"
+            class="notifications-icon"
+          />
+          <div class="notifications-count">1</div>
+        </div>
+        <img src="asset/header/user.svg" alt="user" class="user-icon" />
+      </div>
+    </section>
+
+    <section class="sidebar" id="sidebar">
+      <!-- 사이드바 -->
+      <nav class="sidebar-menu">
+        <div class="sidebar-item active">
+          <img src="asset/sidebar/home.svg" class="sidebar-icon" />
+          <span>홈</span>
+        </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/shorts.svg" class="sidebar-icon" />
+          <span>Shorts</span>
+        </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/subscriptions.svg" class="sidebar-icon" />
+          <span>구독</span>
+          <div class="blue-dot"></div>
+        </div>
+      </nav>
+
+      <hr class="sidebar-divider" />
+
+      <!-- 내 페이지 -->
+      <div class="sidebar-section">
+        <div class="sidebar-title">내 페이지 ></div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/history.svg" class="sidebar-icon" /><span
+            >시청 기록</span
+          >
+        </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/playlist.svg" class="sidebar-icon" /><span
+            >재생목록</span
+          >
+        </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/videos.svg" class="sidebar-icon" /><span
+            >내 동영상</span
+          >
+        </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/watch-later.svg" class="sidebar-icon" /><span
+            >나중에 볼 동영상</span
+          >
+        </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/like.svg" class="sidebar-icon" /><span
+            >좋아요 표시한 동영상</span
+          >
+        </div>
+      </div>
+
+      <hr class="sidebar-divider" />
+
+      <!-- 구독 목록 -->
+      <div class="sidebar-section">
+        <div class="sidebar-title">구독</div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/youtube_circle.png" class="channel-icon" />
+          <span>침착맨</span>
+          <div class="blue-dot"></div>
+        </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/youtube_circle.png" class="channel-icon" />
+          <span>BEARS TV</span>
+        </div>
+        <div class="sidebar-item">
+          <img src="asset/sidebar/youtube_circle.png" class="channel-icon" />
+          <span>모트모트TV</span>
+          <div class="blue-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="main-wrapper">
+      <!-- 영상 네비게이션바 -->
+      <section class="nav">
+        <button class="nav-arrow left" id="navLeft">&lt;</button>
+
+        <div class="nav-buttons" id="navButtons">
+          <button class="nav-btn active" data-category="전체">전체</button>
+          <button class="nav-btn" data-category="음악">음악</button>
+          <button class="nav-btn" data-category="게임">게임</button>
+          <button class="nav-btn" data-category="믹스">믹스</button>
+          <button class="nav-btn" data-category="야구">야구</button>
+          <button class="nav-btn" data-category="라이브">라이브</button>
+          <button class="nav-btn" data-category="힙합">힙합</button>
+          <button class="nav-btn" data-category="ASMR">ASMR</button>
+          <button class="nav-btn" data-category="랩">랩</button>
+          <button class="nav-btn" data-category="애니메이션">애니메이션</button>
+          <button class="nav-btn" data-category="최근에 업로드된 동영상">
+            최근에 업로드된 동영상
+          </button>
+          <button class="nav-btn" data-category="감상한 동영상">
+            감상한 동영상
+          </button>
+          <button class="nav-btn" data-category="새로운 맞춤 동영상">
+            새로운 맞춤 동영상
+          </button>
+        </div>
+
+        <button class="nav-arrow right" id="navRight">&gt;</button>
+      </section>
+
+      <!-- 영상 리스트 -->
+      <section class="Content">
+        <div class="videoContainer"></div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
